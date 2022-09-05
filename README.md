@@ -1,5 +1,5 @@
 # DSFileConverter
-Author: [@JoseDuranPareja](https://github.com/jodurpar) / (October 2022)
+Author: [@JoseDuranPareja](https://github.com/jodurpar) / (September 2022)
 
 
 ## Build in VisualStudio 2022
