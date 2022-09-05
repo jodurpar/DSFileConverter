@@ -1,6 +1,6 @@
 
 
-export interface converterOptions {
+export interface ConverterOptions {
     inputFile: string,
     outputFile: string,
     inputFileType: string,

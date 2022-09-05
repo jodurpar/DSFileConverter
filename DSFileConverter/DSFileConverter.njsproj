@@ -6,6 +6,8 @@
     <RootNamespace>DSFileConverter</RootNamespace>
     <ScriptArguments>--i C:\\DuranSoftware\\Test\\excel\\prueba.txt --it txt --o C:\\DuranSoftware\\Test\\excel\\sheet-js.ods --ot ods --d | --s Hoja1 --h no</ScriptArguments>
     <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
+    <JavaScriptTestRoot>test</JavaScriptTestRoot>
+    <JavaScriptTestFramework>Jest</JavaScriptTestFramework>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -36,6 +38,7 @@
     <Content Include="tsconfig.json" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="test\" />
     <Folder Include="src\" />
     <Folder Include="src\interfaces\" />
     <Folder Include="src\commadprompt\" />

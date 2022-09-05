@@ -1,10 +1,10 @@
 import * as XLSX from 'xlsx';
-import { converterOptions } from "../interfaces/converterOptions";
-import { readtextfile } from '../readers/readtextfile';
+import { ConverterOptions } from "../interfaces/converterOptions";
+import { ReadTextFile } from '../readers/readtextfile';
 import { insertline } from './insertline';
 
 export class TxtToOds {
-    public static Execute(options: converterOptions) {
+    public static Execute(options: ConverterOptions) {
 		const write_opts: XLSX.WritingOptions = {
 			type: "buffer",
 			cellDates: false,
@@ -17,7 +17,7 @@ export class TxtToOds {
 				Company: options.company
 			}
 		};
-		let textile = readtextfile.read(options.inputFile);
+		let textile = ReadTextFile.read(options.inputFile);
 		const workbook = XLSX.utils.book_new();
 		const ws1b = XLSX.utils.aoa_to_sheet([]);
 		for (const element of textile) {
@@ -29,10 +29,8 @@ export class TxtToOds {
 		}
 		try {
 			XLSX.writeFile(workbook, options.outputFile, write_opts)
-		} catch (error) {
-			console.log(`Can't write output file ${options.outputFile}`)
-			//console.log(`Error: ${error.message}`);
-			throw (error);
+		} finally {
+			// nothig to do
         }
 	}
 	private static ec(r:number, c:number) : string {

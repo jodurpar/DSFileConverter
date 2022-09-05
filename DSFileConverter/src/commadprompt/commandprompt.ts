@@ -1,10 +1,9 @@
-import { converterOptions } from "../interfaces/converterOptions";
+import { ConverterOptions } from "../interfaces/converterOptions";
 
 
 export class CommandPrompt {
-    public static GetOptions(): converterOptions {
-        var converterOptions: converterOptions = {} as converterOptions;
-        var optionsList : Array<string> = new Array<string>();
+    public static GetOptions(): ConverterOptions {
+        let converterOptions: ConverterOptions = {} as ConverterOptions;
         for (let j = 0; j < process.argv.length; j++) {
             let arg = process.argv[j].toLowerCase();
             switch (arg) {
@@ -44,6 +43,7 @@ export class CommandPrompt {
                 case '--h':
                 case '--headers':
                     converterOptions.headers = process.argv[j + 1] === 'yes';
+                    break;
                 default: break;
             }
             
