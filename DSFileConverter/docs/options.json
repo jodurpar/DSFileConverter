@@ -1,0 +1,11 @@
+{
+	"inputFile": "InputFile.txt",
+    "outputFile": "OutputFile.ods",
+    "inputFileType": "txt",
+    "outputFileType": "ods",
+    "firstSheetName": "SheetName",
+    "delimiter": "|",
+    "headers": false,
+    "author": "",
+    "company": ""
+}

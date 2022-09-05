@@ -33,12 +33,14 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="webpack.config.js" />
+    <Content Include="docs\options.json" />
+    <Content Include="webpack.config.ts" />
     <None Include="app.ts" />
     <Content Include="package.json" />
     <Content Include="tsconfig.json" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="docs\" />
     <Folder Include="test\" />
     <Folder Include="src\" />
     <Folder Include="src\interfaces\" />

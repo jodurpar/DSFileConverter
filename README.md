@@ -8,7 +8,7 @@ Portions of (&copy;) https://sheetjs.com/ Community Edition
    - Goto solution item and rebuild 
    - If you want run from ide, configure params in project/properties
 
-## Usage
+## Usage without webpack
 
 ### Go to dist folder and run 'node app [params]
 
@@ -34,6 +34,13 @@ Portions of (&copy;) https://sheetjs.com/ Community Edition
 	| '--author'      | Include author copyright                     |
 	| '--c'           |                                              |
 	| '--company'     | Include company copyright                    |
+
+## Usage With webpack
+### You can use webpack to minimize and compress in one file all the js.
+
+ - Go to main folder (where webpack.config.ts exits) and at commandprompt run "webpack", 
+ - When ends, in the dist folder must be a dsfileconverter.js file
+ - At command prompt run "node dsfileconverter.js" 
 
 ### Json file example
 
