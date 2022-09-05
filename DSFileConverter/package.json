@@ -1,0 +1,21 @@
+{
+  "name": "dsfile-converter",
+  "version": "0.0.0",
+  "description": "DSFileConverter",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean",
+    "start" : "node dist/app.js"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.7",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}
