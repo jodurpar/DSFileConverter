@@ -11,7 +11,7 @@ export class Command {
             let commandName = `${options.inputFileType}to${options.outputFileType}`;
             if (this.commands[commandName] !== undefined) {
                 this.commands[commandName](options);
-                console.log(`File ${options.outputFile} created!`)
+                console.log(`File ${options.outputFileType} created!`)
             } else {
                 console.log(`Can't convert ${options.inputFileType} to ${options.outputFileType} (missing function: ${commandName})`)
             }
