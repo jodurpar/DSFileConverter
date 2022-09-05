@@ -10,10 +10,10 @@ Portions of (&copy;) https://sheetjs.com/ Community Edition
 
 ## Usage
 
-### Go to dist folder and run 'node app.js [params]
+### Go to dist folder and run 'node app [params]
 
-	| Param           |         Description                          |
-	| -----------     | ------------------------------               |
+	|      Param      |                 Description                  |
+	|-----------------|----------------------------------------------|
 	| '--f'           |                                              |
 	| '--file'        | Json file for params, no other params needed |
 	| '--i'           |                                              |
