@@ -1,6 +1,6 @@
 # DSFileConverter
-Author: [@JoseDuranPareja](https://github.com/jodurpar) / (September 2022)
-
+Author: (&copy;) [@JoseDuranPareja](https://github.com/jodurpar) / (September 2022)
+Portions of (&copy;) https://sheetjs.com/ Community Edition
 
 ## Build in VisualStudio 2022
 
