@@ -1,6 +1,6 @@
 import * as XLSX from 'xlsx';
 import { ConverterOptions } from "../interfaces/converterOptions";
-import { ReadTextFile } from '../readers/readtextfile';
+import { ReadTextFile } from '../services/readtextfile';
 import { insertline } from './insertline';
 
 export class TxtToOds {

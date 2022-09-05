@@ -1,4 +1,5 @@
 import { ConverterOptions } from "../interfaces/converterOptions";
+import { ReadTextFile } from "../services/readtextfile";
 
 
 export class CommandPrompt {
@@ -7,7 +8,10 @@ export class CommandPrompt {
         for (let j = 0; j < process.argv.length; j++) {
             let arg = process.argv[j].toLowerCase();
             switch (arg) {
-
+                case '--f':
+                case '--file':
+                    converterOptions = ReadTextFile.readAsJson(process.argv[j + 1]);
+                    break;
                 case '--i':
                 case '--input':
                     converterOptions.inputFile = process.argv[j + 1];

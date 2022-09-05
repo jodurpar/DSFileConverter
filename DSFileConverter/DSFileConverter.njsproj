@@ -4,7 +4,7 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <Name>DSFileConverter</Name>
     <RootNamespace>DSFileConverter</RootNamespace>
-    <ScriptArguments>--i C:\\DuranSoftware\\Test\\excel\\prueba.txt --it txt --o C:\\DuranSoftware\\Test\\excel\\sheet-js.ods --ot ods --d | --s Hoja1 --h no</ScriptArguments>
+    <ScriptArguments>--f "C:\\DuranSoftware\\Test\\excel\prueba.json"</ScriptArguments>
     <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
     <JavaScriptTestRoot>test</JavaScriptTestRoot>
     <JavaScriptTestFramework>Jest</JavaScriptTestFramework>
@@ -43,7 +43,7 @@
     <Folder Include="src\interfaces\" />
     <Folder Include="src\commadprompt\" />
     <Folder Include="src\commands\" />
-    <Folder Include="src\readers\" />
+    <Folder Include="src\services\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="src\commadprompt\commandprompt.ts">
@@ -61,7 +61,7 @@
     <TypeScriptCompile Include="src\interfaces\converterOptions.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="src\readers\readtextfile.ts">
+    <TypeScriptCompile Include="src\services\readtextfile.ts">
       <SubType>Code</SubType>
     </TypeScriptCompile>
   </ItemGroup>
