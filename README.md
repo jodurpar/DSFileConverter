@@ -1,4 +1,12 @@
 # DSFileConverter
+Author: [@JoseDuranPareja](https://github.com/jodurpar) / (October 2022)
+
+
+## Build in VisualStudio 2022
+
+   - Open solution with VisualStudio 2022
+   - Goto solution item and rebuild 
+   - If you want run from ide, configure params in project/properties
 
 ## Usage
 
